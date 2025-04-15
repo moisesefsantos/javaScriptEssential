@@ -49,3 +49,20 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+let personRole = "Enrolled Member";
+let accessMessage;
+
+if (personRole === "Employee") {
+    accessMessage = "Access granted: You are authorized to use Dietary Services.";
+} else if (personRole === "Enrolled Member") {
+    accessMessage = "Access granted: You are authorized to use Dietary Services and have one-on-one interaction with a dietician.";
+} else if (personRole === "Subscriber") {
+    accessMessage = "Access granted: You have partial access to Dietary Services.";
+} else if (personRole === "Non-Subscriber") {
+    accessMessage = "Access denied: Please enroll or subscribe to use Dietary Services.";
+} else {
+    accessMessage = "Invalid role: Unable to determine access level.";
+}
+
+console.log("Dietary Program Message:", accessMessage);
