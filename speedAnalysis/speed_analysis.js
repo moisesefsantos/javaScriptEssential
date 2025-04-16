@@ -30,7 +30,7 @@ function endTest() {
     const userTypedText = userInput.value.trim();
 
     const typedWords    = userTypedText.split(/\s+/).filter(w => w !== "").length;
-    const textLength    = userTypedText.length;  // <-- total de caracteres
+    const textLength    = userTypedText.length;
 
     const wpm = timeElapsed > 0
         ? Math.round((typedWords / timeElapsed) * 60)
