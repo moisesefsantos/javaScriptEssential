@@ -1,0 +1,20 @@
+{
+    "articles": [
+      {
+        "title": "Global Warming on the Rise",
+        "description": "Scientists warn that global temperatures continue to rise at an alarming rate.",
+        "source": "BBC News"
+      },
+      {
+        "title": "New Tech Innovations in 2025",
+        "description": "Startups are launching cutting-edge AI solutions to automate daily life.",
+        "source": "TechCrunch"
+      },
+      {
+        "title": "World Health Organization Issues New Guidelines",
+        "description": "The WHO has released updated recommendations for mental health support worldwide.",
+        "source": "WHO"
+      }
+    ]
+  }
+  
