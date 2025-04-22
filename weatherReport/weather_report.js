@@ -3,7 +3,7 @@ require('dotenv').config();
 function showweatherDetails(event) {
     event.preventDefault();
     const city = document.getElementById('city').value;
-    const apiKey = 'de9dcda00a1e166bb1ab0f4e0d7b09a7'; // Replace 'YOUR_API_KEY' with your actual API key
+    const apiKey = 'myapihere'; // Replace 'YOUR_API_KEY' with your actual API key
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     fetch(apiUrl)
         .then(response => response.json())
@@ -24,7 +24,7 @@ function showweatherDetailsLatLon(event) {
     event.preventDefault();
     const lat = document.getElementById('latitude').value;
     const lon = document.getElementById('longitude').value;
-    const apiKey = 'de9dcda00a1e166bb1ab0f4e0d7b09a7'; // Replace
+    const apiKey = 'myapihere'; // Replace
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
     fetch(apiUrl)
         .then(response => response.json())
